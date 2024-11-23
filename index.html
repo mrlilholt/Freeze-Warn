@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freeze Warning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <img id="logo" src="images/chickenOfTheWoods.png" alt="Logo">
+        <h1>Freeze Warning Checker</h1>
+        <form id="zipForm">
+            <label for="zip">Enter your ZIP code:</label>
+            <input type="text" id="zip" name="zip" required>
+            <button type="submit">Check</button>
+        </form>
+        <div id="warningBox">
+            <!-- Freeze warning will appear here -->
+        </div>
+        <canvas id="temperatureChart"></canvas>
+        <p>Freeze warning is when the temperature drops below 32°F (0°C).</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

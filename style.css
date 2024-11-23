@@ -1,0 +1,71 @@
+body {
+    font-family: 'Calistoga', sans-serif; /* Set font to Calistoga */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Optional: Light background */
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height for vertical centering */
+    text-align: center; /* Center-align text */
+}
+
+.container {
+    max-width: 600px; /* Limit the width of the container */
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center; /* Ensure all text inside is center-aligned */
+}
+
+#logo {
+    display: block;
+    margin: 0 auto 10px; /* Center the logo and add space below it */
+    max-width: 100px; /* Reduce the maximum width for a smaller logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    font-size: 1.8rem; /* Adjust size for better readability */
+    color: #333; /* Set contrasting color for title */
+    margin: 0; /* Remove default margins */
+}
+
+form {
+    margin-top: 20px; /* Add space above the form */
+}
+
+input, button {
+    display: block;
+    margin: 10px auto; /* Center-align inputs and buttons */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#warningBox {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#warningBox.freeze {
+    color: white;
+    background-color: #007bff; /* Cool blue background for freeze warning */
+}
+
+#warningBox.no-freeze {
+    color: black;
+    background-color: #f4f4f4; /* Light gray background for no freeze */
+}
+
+canvas {
+    margin-top: 20px; /* Add space above the chart */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
